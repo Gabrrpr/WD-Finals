@@ -1,0 +1,203 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #134ca2;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* Adjust if necessary, e.g., center */
+    align-items: center; /* Vertically centers the logo and nav */
+    padding: 20px;
+    background-color: black;
+    height: 100px; /* Set a fixed height for the header */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+header .logo {
+    width: 200px;
+    height: auto;
+}
+
+button, .nav-button {
+    --glow-color: rgb(70, 151, 206);
+    --enhanced-glow-color: rgb(91, 91, 181);
+    --btn-color: rgb(0, 40, 125);
+    border: .25em solid var(--glow-color);
+    padding: 0.5em 1.5em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 1em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button::after, .nav-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+button:hover, .nav-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 2em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active, .nav-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+                0 0 2.5em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.main-content .text {
+    max-width: 600px;
+}
+
+.main-content h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.main-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.main-content .buttons {
+    margin-top: 30px;
+}
+
+.main-content .buttons .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.main-content .buttons .start-trial {
+    background-color: #2ea44f;
+}
+
+.main-content .buttons .contact-sales {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.main-content .illustration {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10em; /* Add margin to create space between image and text */
+    margin-top: -50px;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+footer .copyright {
+    flex: 1;
+    text-align: left;
+    padding: 10px 20px;
+    height: 10x;
+}
+
+footer .social {
+    flex: 1;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+footer .social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .copyright, footer .social {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer .social a {
+        display: block;
+        margin: 5px 0;
+    }
+}
