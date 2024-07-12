@@ -11,12 +11,12 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start; /* Adjust if necessary, e.g., center */
-    align-items: center; /* Vertically centers the logo and nav */
+    justify-content: flex-start;
+    align-items: center;
     padding: 20px;
     background-color: black;
-    height: 100px; /* Set a fixed height for the header */
-    box-sizing: border-box; /* Include padding in the height calculation */
+    height: 100px;
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -37,7 +37,7 @@ button, .nav-button {
     border-radius: 1em;
     outline: none;
     box-shadow: 0 0 1em .25em var(--glow-color),
-                0 0 4em 1em var(--glow-spread-color),
+                0 0 4em 1em var(--enhanced-glow-color),
                 inset 0 0 .75em .25em var(--glow-color);
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
@@ -54,9 +54,9 @@ button::after, .nav-button::after {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
+    background-color: var(--enhanced-glow-color);
+    filter: blur(20px);
+    opacity: .1;
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
@@ -64,13 +64,13 @@ button:hover, .nav-button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
     box-shadow: 0 0 1em .25em var(--glow-color),
-                0 0 4em 2em var(--glow-spread-color),
+                0 0 4em 2em var(--enhanced-glow-color),
                 inset 0 0 .75em .25em var(--glow-color);
 }
 
 button:active, .nav-button:active {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
-                0 0 2.5em 2em var(--glow-spread-color),
+                0 0 2.5em 2em var(--enhanced-glow-color),
                 inset 0 0 .5em .25em var(--glow-color);
 }
 
