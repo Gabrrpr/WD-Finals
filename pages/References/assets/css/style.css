@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #134ca2;
     color: white;
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent,#ffffff);
+    background: linear-gradient(transparent,#2e98a4);
     border-radius: 6px;
 }
 
@@ -30,15 +29,14 @@ body {
     background: linear-gradient(transparent, #fff);
 }
 
-
 header {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-start; /* Adjust if necessary, e.g., center */
+    align-items: center; /* Vertically centers the logo and nav */
     padding: 20px;
     background-color: black;
-    height: 100px;
-    box-sizing: border-box;
+    height: 100px; /* Set a fixed height for the header */
+    box-sizing: border-box; /* Include padding in the height calculation */
 }
 
 header .logo {
@@ -97,7 +95,6 @@ button:active, .nav-button:active {
                 inset 0 0 .2em .05em var(--glow-color);
 }
 
-
 .nav-menu ul {
     list-style: none;
     display: flex;
@@ -114,114 +111,4 @@ button:active, .nav-button:active {
     color: white;
     font-weight: 700;
     font-size: 1em;
-}
-
-.container {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
-
-.main-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 50px;
-}
-
-.main-content .text {
-    max-width: 600px;
-}
-
-.main-content h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-}
-
-.main-content p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 10px 0;
-    text-align: justify;
-}
-
-.main-content .buttons {
-    margin-top: 30px;
-}
-
-.main-content .buttons .btn {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-right: 20px;
-    display: inline-block;
-    font-weight: 700;
-}
-
-.main-content .buttons .start-trial {
-    background-color: #2ea44f;
-}
-
-.main-content .buttons .contact-sales {
-    background-color: transparent;
-    border: 1px solid white;
-}
-
-.main-content .illustration {
-    max-width: 100%;
-    height: auto;
-    margin-left: 10em; /* Add margin to create space between image and text */
-    margin-top: -50px;
-}
-
-footer {
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-footer .copyright {
-    flex: 1;
-    text-align: left;
-    padding: 10px 20px;
-    height: 10x;
-}
-
-footer .social {
-    flex: 1;
-    text-align: right;
-    padding: 10px 20px;
-}
-
-footer .social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 20px;
-}
-
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-    }
-
-    footer .copyright, footer .social {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    footer .social a {
-        display: block;
-        margin: 5px 0;
-    }
 }
