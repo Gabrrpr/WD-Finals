@@ -1,3 +1,11 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #134ca2;
@@ -8,6 +16,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#44a42e);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #fff);
+}
+
 
 header {
     display: flex;
@@ -163,7 +185,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: auto;
+    margin-top: 30px;
 }
 
 footer .copyright {

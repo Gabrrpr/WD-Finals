@@ -1,3 +1,11 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #134ca2;
@@ -7,6 +15,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#8ca42e);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #fff);
 }
 
 header {
@@ -25,8 +46,8 @@ header .logo {
 }
 
 button, .nav-button {
-    --glow-color: rgb(70, 151, 206);
-    --enhanced-glow-color: rgb(91, 91, 181);
+    --glow-color: rgb(206, 188, 70);
+    --enhanced-glow-color: rgb(190, 137, 63);
     --btn-color: rgb(0, 40, 125);
     border: .25em solid var(--glow-color);
     padding: 0.5em 1.5em;
@@ -36,19 +57,21 @@ button, .nav-button {
     background-color: var(--btn-color);
     border-radius: 1em;
     outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-                0 0 4em 1em var(--enhanced-glow-color),
-                inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
+    box-shadow: 0 0 0.5em .15em var(--glow-color),
+                0 0 2em 0.1em var(--enhanced-glow-color),
+                inset 0 0 .5em .15em var(--glow-color);
+    text-shadow: 0 0 .25em var(--glow-color);
     position: relative;
     transition: all 0.3s;
     text-decoration: none;
     display: inline-block;
+    margin-top: 20px;
 }
+
 
 button::after, .nav-button::after {
     pointer-events: none;
-    content: "";
+    content: "";    
     position: absolute;
     top: 120%;
     left: 0;
@@ -63,15 +86,15 @@ button::after, .nav-button::after {
 button:hover, .nav-button:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-                0 0 4em 2em var(--enhanced-glow-color),
-                inset 0 0 .75em .25em var(--glow-color);
+    box-shadow: 0 0 0.5em .15em var(--glow-color),
+                0 0 2em 1em var(--enhanced-glow-color),
+                inset 0 0 .5em .15em var(--glow-color);
 }
 
 button:active, .nav-button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-                0 0 2.5em 2em var(--enhanced-glow-color),
-                inset 0 0 .5em .25em var(--glow-color);
+    box-shadow: 0 0 0.3em .1em var(--glow-color),
+                0 0 1.5em 1em var(--enhanced-glow-color),
+                inset 0 0 .3em .1em var(--glow-color);
 }
 
 .nav-menu ul {
@@ -133,10 +156,12 @@ main {
 
 .top-cards {
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .bottom-cards {
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 article {
