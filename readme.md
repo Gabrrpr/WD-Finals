@@ -9,7 +9,7 @@
     <img src="./assets/img/5588d8fb9b09bb8887bcd741118d05b8-removebg-preview (2).png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Personal Website: A showcase of Design and Functionality</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
