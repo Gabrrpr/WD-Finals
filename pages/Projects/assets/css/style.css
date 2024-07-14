@@ -170,30 +170,31 @@ main {
 .bottom-cards {
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 .card-seatwork2 {
-    background: linear-gradient(45deg, #ffffff, #fcfcfc);
+    background: linear-gradient(180deg, #ffffff, #878484);
 }
 
 .card-seatwork3 {
-    background: linear-gradient(45deg, #f9f9f9, #ffffff);
+    background: linear-gradient(180deg, #f9f9f9, #878484);
 }
 
 .card-seatwork4 {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
+    background: linear-gradient(180deg, #ffffff, #878484);
 }
 
-.card-midterm-lab {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
+.card-midtermlab {
+    background: linear-gradient(180deg, #ffffff, #878484);
 }
 
 .card-handson2 {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
+    background: linear-gradient(180deg, #ffffff, #878484);
 }
 
 .card-midtermlec {
-    background: linear-gradient(45deg, #ffffff, #ffffff);
+    background: linear-gradient(180deg, #ffffff, #878484);
 }
 
 article {
