@@ -126,7 +126,8 @@ html {
 
 h1 {
     color: #000000;
-    font-size: xx-large;
+    font-size: 4.5em;
+    font-family: 'DM Serif Display';
 }
 
 h2 {
@@ -142,7 +143,7 @@ p {
 }
 
 footer p {
-    color :#fcfcfc;
+    color :#fefefe;
 }
 
 main {
@@ -158,7 +159,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .top-cards {
