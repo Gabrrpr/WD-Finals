@@ -120,3 +120,4 @@ WD-ProjectName
 | Guidance | Guide me through formatting codes | https://developer.mozilla.org/en-US/ |
 | Card Designs | Card design for projects | https://freefrontend.com/#google_vignette |
 | Card Designs | Card design for projects | https://uiverse.io/ |
+| Wakatime | To keep track of works | https://wakatime.com/dashboard |

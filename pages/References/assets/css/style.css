@@ -115,12 +115,11 @@ button:active, .nav-button:active {
 
 .references {
     font-family: 'Playwrite HR', sans-serif;
-    font-weight: 400; /* Adjust the weight as needed */
-    /* Add any other styling you need */
-    font-size: 1.5em; /* Example: Adjust the size as needed */
-    color: #000000; /* Example: Adjust the color as needed */
-    text-align: center; /* Example: Adjust alignment as needed */
-    margin-bottom: 20px; /* Example: Adjust margin as needed */
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
     margin-top: 100px;
 }
 
@@ -142,8 +141,8 @@ button:active, .nav-button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Optional: Adjust padding for better spacing */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .tools-used {
@@ -157,7 +156,7 @@ button:active, .nav-button:active {
 }
 
 .center-image {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -165,7 +164,7 @@ button:active, .nav-button:active {
 
 .center-image img {
     max-width: 100%;
-    height: auto;
+    height: 150px;
     margin-top: 50px;
 }
 
